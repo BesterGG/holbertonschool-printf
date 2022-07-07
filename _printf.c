@@ -8,7 +8,7 @@
 int (*runner(char c))(va_list)
 {
 	int j = 0;
-	op_t ops[]= {
+	ops_t ops[]= {
 	{'i', p_int},
 	{'d', p_int},
 	{'c', p_char},
