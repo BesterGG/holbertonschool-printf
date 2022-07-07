@@ -4,8 +4,9 @@
  *
  *
  */
-int p_int(int n)
+int p_int(va_list args)
 {
+	int n = va_arg(args, int);
 	int count = 0, i;
 	if( n == 0)
 	{
