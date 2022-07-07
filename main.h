@@ -9,7 +9,6 @@ typedef struct ops
 	int (*func)(va_list args);
 } ops_t;
 int _putchar(char);
-int (*runner(char c))(va_list);
 int _printf(const char *format, ...);
 int p_char(va_list args);
 int p_int(va_list args);
