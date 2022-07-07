@@ -6,7 +6,7 @@
 typedef struct ops
 {
 	char op;
-	void (*func)(va_list args);
+	int (*func)(va_list args);
 } ops_t;
 int _putchar(char);
 int (*runner(char c))(va_list);

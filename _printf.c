@@ -15,13 +15,14 @@ int (*runner(char c))(va_list)
 	{'s', p_str},
 	{'\0', NULL}
 	};
-	for (j = 0; ops[j]; j++)
+	for (j = 0; ops[j].op != '\0'; j++)
 	{
 		if (ops[j].op == c)
 		{
-			return (op[j].func);
+			return (ops[j].func);
 		}
 	}
+return (0);
 }
 int _printf(const char *format, ...)
 {	
@@ -49,4 +50,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(args);
+return (0);
 }

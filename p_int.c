@@ -1,5 +1,5 @@
 #include "main.h"
-int p_int_aux(n)
+int p_int_aux(int n)
 {
 	int i = 0, count = 0;
 
@@ -22,7 +22,7 @@ int p_int_aux(n)
 int p_int(va_list args)
 {
 	int n = va_arg(args, int);
-	int count = 0, i;
+	int count = 0;
 	if( n == 0)
 	{
 		_putchar('0');
