@@ -1,4 +1,19 @@
 #include "main.h"
+int p_int_aux(n)
+{
+	int i = 0, count = 0;
+
+	for (i = 10; i <= n; i *= 10)
+	{
+	}
+	i /= 10;
+	for (; i > 0; i /= 10)
+	{
+		_putchar(((n / i) % 10) + '0');
+		count++;
+	}
+	return (count);
+}
 /**
  *
  *
@@ -17,19 +32,11 @@ int p_int(va_list args)
 	{
 		_putchar('-');
 		n = -n;
-		count += (p_int(n) + 1);
+		count += p_int_aux(n) + 1;
 	}
 	else
 	{
-		for (i = 10; i <= n; i *= 10)
-		{
-		}
-		i /= 10;
-		for (; i > 0; i /= 10)
-		{
-			_putchar(((n / i) % 10) + '0');
-			count++;
-		}
+		count += p_int_aux(n);
 	}
 	return (count);
 }
