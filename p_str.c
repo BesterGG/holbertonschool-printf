@@ -4,10 +4,18 @@ int p_str(va_list args)
 	char *str = va_arg(args, char *);
 	int i = 0;
 
-	while (str[i] != '\0' && str != NULL)
+	if (!str)
 	{
-		_putchar(str[i]);
-		i++;
+		return (NULL);
 	}
-	return (i - 1);
+	else
+	{
+		while(str)
+		{
+			_putchar(str);
+			count++;
+			str++;
+		}
+	}
+return (count);
 }
