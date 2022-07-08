@@ -8,7 +8,7 @@ int p_str(va_list args)
 
 	if (!str)
 	{
-		return (NULL);
+		return (0);
 	}
 	else
 	{
