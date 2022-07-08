@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ * runner - pick the function
+ * @c: character to match
+ * Return: the correct function :)
  */
 int (*runner(char c))(va_list)
 {
@@ -24,6 +23,11 @@ int (*runner(char c))(va_list)
 	}
 	return (0);
 }
+/**
+ * _printf - a remake of the printf function
+ * @format: is the format to print
+ * Return: the character displayed on the screen
+ */
 int _printf(const char *format, ...)
 {
 	int i = 0, count = 0;
