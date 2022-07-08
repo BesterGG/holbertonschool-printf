@@ -9,5 +9,5 @@ int p_str(va_list args)
 		_putchar(str[i]);
 		i++;
 	}
-	return (i);
+	return (i - 1);
 }
