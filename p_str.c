@@ -1,23 +1,13 @@
 #include "main.h"
-#include <stdlib.h>
-
 int p_str(va_list args)
 {
-	char *str = va_arg(args, char *);
-	int count = 0;
+	char str = va_arg(args, char);
+	int i = 0;
 
-	if (!str)
+	while (str[i] != '\0' && str != NULL)
 	{
-		return (0);
+		_putchar(str[i]);
+		i++;
 	}
-	else
-	{
-		while(str)
-		{
-			_putchar(*str);
-			count++;
-			str++;
-		}
-	}
-return (count);
+	return (i - 1);
 }
