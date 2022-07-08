@@ -2,7 +2,13 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stdlib.h>
-
+/**
+ * struct ops - struct used for get a function
+ * @op: is a character to find
+ * @func: is a function to return
+ *
+ * Description: ops is a array of struct
+ */
 typedef struct ops
 {
 	char op;

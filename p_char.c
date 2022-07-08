@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ * p_char - Function to print characters
+ * @args: list of arguments
+ * Return: 1
  */
 int p_char(va_list args)
 {
