@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+
 int p_str(va_list args)
 {
 	char *str = va_arg(args, char *);
@@ -12,7 +14,7 @@ int p_str(va_list args)
 	{
 		while(str)
 		{
-			_putchar(str);
+			_putchar(*str);
 			count++;
 			str++;
 		}
