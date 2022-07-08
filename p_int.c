@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * p_int - print various cases of numbers and call aux fun
+ * p_int - print numbers
  * @args: Arguments
  * Return: count
  */
