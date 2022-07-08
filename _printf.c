@@ -22,12 +22,13 @@ int (*runner(char c))(va_list)
 			return (ops[j].func);
 		}
 	}
-return (0);
+	return (0);
 }
 int _printf(const char *format, ...)
 {	
 	int i = 0, count = 0;
 	va_list args;
+	
 	va_start(args, format);
 	if (format != NULL && format[i] != '\0')
 	{
@@ -36,12 +37,7 @@ int _printf(const char *format, ...)
 			if (format [i] == '%')
 			{
 				count += (*(runner(format[i + 1])))(args);
-				if (format [i + 1] == '%')
-				{
-					_putchar('%');
-					count++;
-				}
-			i += 2;
+				i += 2;
 			}
 			else
 			{
@@ -51,5 +47,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(args);
-return (0);
+	return (count);
 }
