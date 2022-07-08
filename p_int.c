@@ -37,7 +37,7 @@ int p_int(va_list args)
 	else if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		n = n * -1;
 		count += p_int_aux(n) + 1;
 	}
 	else
