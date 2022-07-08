@@ -4,7 +4,7 @@
 int p_str(va_list args)
 {
 	char *str = va_arg(args, char *);
-	int i = 0;
+	int count = 0;
 
 	if (!str)
 	{
