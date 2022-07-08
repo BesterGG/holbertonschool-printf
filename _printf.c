@@ -45,8 +45,8 @@ int _printf(const char *format, ...)
 					else
 					{
 						count += (*(runner(format[i + 1])))(args);
-						i++;
 					}
+			i++;
 			}
 			else
 			{
