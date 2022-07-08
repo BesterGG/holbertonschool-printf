@@ -42,11 +42,11 @@ int _printf(const char *format, ...)
 						_putchar(format[i + 1]);
 						count += 2;
 					}
-				else
-				{
-					count += (*(runner(format[i + 1])))(args);
-					i += 2;
-				}
+					else
+					{
+						count += (*(runner(format[i + 1])))(args);
+						i++;
+					}
 			}
 			else
 			{
