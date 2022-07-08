@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 	{
 		return (0);
 	}
-	if (format != NULL && format[i] != '\0')
+	else if(format != NULL && format[i] != '\0')
 	{
 		for (; format[i]; i++)
 		{
