@@ -3,13 +3,22 @@
 
 int p_str(va_list args)
 {
-	char *str = va_arg(args, char *);
-	int i = 0;
+    char *str = va_arg(args, char *);
+    int i;
 
-	while (str[i] != '\0' && str != NULL)
-	{
-		_putchar(str[i]);
-		i++;
-	}
-	return (i - 1);
+    if (str == NULL)
+    {
+        _putchar('(');
+        _putchar('n');
+        _putchar('u');
+        _putchar('l');
+        _putchar('l');
+        _putchar(')');
+        return (6);
+    }
+    for (i = 0; str[i] != '\0'; i++)
+    {
+        _putchar(str[i]);
+    }
+    return (i);
 }
