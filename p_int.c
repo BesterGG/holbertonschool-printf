@@ -6,7 +6,7 @@
 */
 int p_int_aux(int n)
 {
-	int i = 0, count = 0;
+	long int i = 0, count = 0;
 
 	for (i = 10; i <= n; i *= 10)
 	{
@@ -26,7 +26,7 @@ int p_int_aux(int n)
  */
 int p_int(va_list args)
 {
-	int n = va_arg(args, int);
+	long int n = va_arg(args, int);
 	int count = 0;
 
 	if (n == 0)
