@@ -34,7 +34,13 @@ int _printf(const char *format, ...)
 	{
 		for (; format[i]; i++)
 		{
-			if (format[i] == '%')
+			if (format[i] == '%' && format[i + 1] == '%')
+			{
+				_putchar('%');
+				count++;
+				i++;
+			}
+			else if (format[i] == '%')
 			{
 					if ((*(runner(format[i + 1]))) == 0)
 					{
