@@ -22,7 +22,7 @@ int (*runner(char c))(va_list)
 			return (ops[j].func);
 		}
 	}
-	return (NULL);
+	return (0);
 }
 int _printf(const char *format, ...)
 {
@@ -36,16 +36,18 @@ int _printf(const char *format, ...)
 		{
 			if (format[i] == '%')
 			{
-				if ((*(runner(format[i + 1] == NULL))))
+					if ((*(runner(format[i + 1]))) == 0)
 					{
 						_putchar(format[i]);
 						_putchar(format[i + 1]);
+						count += 2;
 					}
 				else
 				{
 					count += (*(runner(format[i + 1])))(args);
 					i += 2;
 				}
+			}
 			else
 			{
 				_putchar(format[i]);
