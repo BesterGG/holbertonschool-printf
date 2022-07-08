@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 	if (format == NULL)
 	{
-		return;
+		return (0);
 	}
 	if (format != NULL && format[i] != '\0')
 	{
