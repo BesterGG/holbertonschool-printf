@@ -8,7 +8,7 @@
 int (*runner(char c))(va_list)
 {
 	int j = 0;
-	ops_t ops[]= {
+	ops_t ops[] = {
 	{'i', p_int},
 	{'d', p_int},
 	{'c', p_char},
@@ -25,16 +25,16 @@ int (*runner(char c))(va_list)
 	return (0);
 }
 int _printf(const char *format, ...)
-{	
+{
 	int i = 0, count = 0;
 	va_list args;
-	
+
 	va_start(args, format);
 	if (format != NULL && format[i] != '\0')
 	{
 		for (; format[i]; i++)
 		{
-			if (format [i] == '%')
+			if (format[i] == '%')
 			{
 				count += (*(runner(format[i + 1])))(args);
 				i += 2;
