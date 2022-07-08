@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *
- *
+ * p_str - display a string on the screen
+ * @args: string from the user
+ * Return: amount of characters, and (null) if str is NULL
  */
 int p_str(va_list args)
 {

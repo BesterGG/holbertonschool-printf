@@ -31,35 +31,30 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 	if (format == NULL)
-	{
 		return (-1);
-	}
-	else if(format != NULL && format[i] != '\0')
+	else if (format != NULL && format[i] != '\0')
 	{
 		for (; format[i]; i++)
 		{
-			if (format[i] == '%' && format[i +1] == '\0')
-			{
+			if (format[i] == '%' && format[i + 1] == '\0')
 				return (-1);
-			}
 			if (format[i] == '%' && format[i + 1] == '%')
 			{
 				_putchar('%');
-				count++;
-				i++;
+				count++, i++;
 			}
 			else if (format[i] == '%')
 			{
-					if ((*(runner(format[i + 1]))) == 0)
-					{
-						_putchar(format[i]);
-						_putchar(format[i + 1]);
-						count += 2;
-					}
-					else
-					{
-						count += (*(runner(format[i + 1])))(args);
-					}
+				if ((*(runner(format[i + 1]))) == 0)
+				{
+					_putchar(format[i]);
+					_putchar(format[i + 1]);
+					count += 2;
+				}
+				else
+				{
+					count += (*(runner(format[i + 1])))(args);
+				}
 			i++;
 			}
 			else
