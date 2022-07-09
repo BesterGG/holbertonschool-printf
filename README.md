@@ -17,7 +17,7 @@ After that, this process is repeated until function process all formats paramete
 
 Each function writes a character one by one.
 
-## FLAG CHARACTERS
+## Flag characters
 The character % is followed by one of the next specific characters.
 
 %c 
