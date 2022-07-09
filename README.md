@@ -32,6 +32,28 @@ The character % is followed by one of the next specific characters.
 %i
 - Display a integer, same as %d. %i Specifies an integer
 
+## Syntax
+
+```
+_printf(const char *[format], ...)
+
+```
+### Examples
+
+```
+_printf("I like bread with %s", "butter");
+
+```
+
+```
+_printf("I'm %d years old and I'm learning how to print %s, 15, "Hello world");
+
+```
+```
+_printf("This display a character: %c", 'K');
+
+```
+
 # FLOWCHART
 ![Flowchart of _printf](https://i.imgur.com/WqmtXuH.jpeg)
 
