@@ -17,7 +17,7 @@ After that, this process is repeated until function process all formats paramete
 
 Each function writes a character one by one.
 
-## Flag characters
+## FLAG CHARACTERS
 The character % is followed by one of the next specific characters.
 
 %c 
@@ -30,6 +30,6 @@ The character % is followed by one of the next specific characters.
 %i
     Display a integer, same as %d. %i Specifies an integer
 
-# Flowchart
+# FLOWCHART
 ![Flowchart of _printf](https://i.imgur.com/WqmtXuH.jpeg)
 
