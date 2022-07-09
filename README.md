@@ -8,8 +8,8 @@ This project was completed as a part of the program [Software Development Fundam
 
 ## DESCRIPTION
 
-_printf function takes 2 arguments, a character pointer to a string who is called "format", and a variable arguments list (variadic functions) from the library <stdarg.h>.
-This functions loops the format searching for a specific characters indicated with a '%' symbol before the character.
+_printf function is a variadic function, this function takes one or more arguments, a string who is called "format", and a variable arguments list from the library <stdarg.h>.
+This functions loops thiught format, searching for a specific character indicated with a '%' symbol before the character.
 
 If the function found, it called the function runner(char c))(va_list) and if it finds a match in the struct calls the function corresponding to that specific character.
 Then, returns a pointer to that specifier function and the amount of characters displayed saved in the variable count.
