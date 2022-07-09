@@ -21,14 +21,16 @@ Each function writes a character one by one.
 The character % is followed by one of the next specific characters.
 
 %c
-    Display a character.
+- Display a character.
     
 %s 
-    Display a string of characters.
+- Display a string of characters.
+
 %d 
-    Display a integer of type int in base 10. %d Specifies signed decimal integer.
+- Display a integer of type int in base 10. %d Specifies signed decimal integer.
+
 %i
-    Display a integer, same as %d. %i Specifies an integer
+- Display a integer, same as %d. %i Specifies an integer
 
 # FLOWCHART
 ![Flowchart of _printf](https://i.imgur.com/WqmtXuH.jpeg)
