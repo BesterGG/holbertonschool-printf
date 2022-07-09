@@ -20,9 +20,9 @@ Each function writes a character one by one.
 ## Flag characters
 The character % is followed by one of the next specific characters.
 
-%c 
+%c
     Display a character.
-
+    
 %s 
     Display a string of characters.
 %d 
