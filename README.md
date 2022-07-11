@@ -55,7 +55,6 @@ _printf("This display a character: %c", 'K');
 ```
 
 # FLOWCHART
-![Flowchart of _printf](https://i.imgur.com/WqmtXuH.jpeg)
 
 ![Flowchart of _printf](https://cdn.discordapp.com/attachments/994950921039642674/996101942482849832/FlowchartV2.jpg)
 
